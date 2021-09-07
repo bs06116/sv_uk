@@ -9,17 +9,18 @@ use Toastr;
 
 class AuthController extends Controller
 {
+
     public function login(Request $request){
         $credentials =[
             'email' => $request->email,
             'password' => $request->password,
         ];
-      
+
         $email=$request->email;
         $user=User::where('email',$email)->first();
         if( Auth::attempt($credentials)){
         if ($user->status==1){
-            
+
         Auth::attempt($credentials);
                 return redirect()->intended('dashboard');
             }else
@@ -32,11 +33,19 @@ class AuthController extends Controller
       toastr()->error('credentials does not match');
        return redirect()->back();
       }
-           
+
+    }
+    public function index(){
+      if(Auth::check()){
+        return redirect()->route('dashboard');
+    }
+      return view('auth.login');
+
+
     }
     public function logout(){
         Auth::logout();
-        return redirect()->route('login');
+        return redirect()->route('control-panel');
     }
 }
 

@@ -17,7 +17,7 @@ class Agent
     {
         if ($request->user() && $request->user()->type !='agent')
         {
-            return redirect('/login');
+            return redirect('/control-panel');
         }
         return $next($request);
     }

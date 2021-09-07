@@ -1395,7 +1395,7 @@ Being a tenant, it’s expected for you to reside in the property with responsib
                         <img class="img-responsive" src="{{asset('assets/img/image (2).png')}}" alt="">
                         <h3 class="feature__title"><span style="color: #bc985f"> Investors and landlords </span></h3>
                         <p class="feature__desc">
-                           The areas where you’re most fascinated in staying focused on our monthly property market update is a must-have tool for landlords...
+                           The areas where you’re most fascinated in staying focused on our monthly property market update is a must-have tool for landlords... 
                         </p><br>
                         <p  class="feature__desc"><a href="{{url('investor-landlord')}}">Sign up now </a></p>
                     </div>

@@ -10,7 +10,7 @@
   <meta content="ThemeDesign" name="author" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="shortcut icon" type="image/jpg" href="{{asset('assets/img/webtop.jpeg')}}"/>
-
+  
   <link href="{{asset('new/assets/plugins/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
   <link href="{{asset('new/assets/plugins/datatables/buttons.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
   <link href="{{asset('new/assets/plugins/datatables/responsive.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
@@ -75,7 +75,7 @@
         <div class="user-details" style="padding: 8px;">
           <div class="text-center">
             <img src="{{Auth::user()->image}}" alt="" class="rounded-circle"style="height: 39px;width: 43px;">
-
+             
           </div>
           <div class="user-info">
               <a href="{{route('profile')}}" style="color:#fff;font-size: 12px;">(Edit profile)</a>
@@ -83,12 +83,12 @@
 
 
              </span>
-          </div>
+          </div> 
         </div>
         <hr style="width: 233px;height: -13px;background: aliceblue;">
         <div id="sidebar-menu">
           <ul>
-
+              
               @if (Auth::user()->type=='admin')
              <li>
             <a href="{{url('/')}}" class="waves-effect">
@@ -100,7 +100,7 @@
                   <a href="{{route('dashboard')}}" class="waves-effect">
                       <i class="fa fa-tachometer" aria-hidden="true"></i>
                       <span style="color: white"> Dashboard</span>
-
+                      
                   </a>
               </li>
             <li>
@@ -108,15 +108,15 @@
                 <i class="fa fa-users" aria-hidden="true"></i>
                   <span>View Estate Agents <span class="badge badge-primary pull-right"></span></span>
               </a>
-          </li>
+          </li>  
               <li>
                   <a href="{{route('buyer.index')}}" class="waves-effect">
                     <i class="fa fa-users" aria-hidden="true"></i>
                       <span>View Buyers <span class="badge badge-primary pull-right"></span></span>
                   </a>
               </li>
-
-
+              
+            
               <li>
                 <a href="{{route('seller.index')}}" class="waves-effect">
                   <i class="fa fa-users" aria-hidden="true"></i>
@@ -129,7 +129,7 @@
                   <span>Sellers Properties <span class="badge badge-primary pull-right"></span></span>
               </a>
           </li>
-
+          
           <li>
             <a href="{{route('agentproperty')}}" class="waves-effect">
               <i class="fa fa-building" aria-hidden="true"></i>
@@ -154,7 +154,7 @@
           <!--      <span>Home <span class="badge badge-primary pull-right"></span></span>-->
           <!--  </a>-->
         <!--</li>-->
-
+        
           @elseif (Auth::user()->type=='seller')
           <li>
             <a href="{{url('/')}}" class="waves-effect">
@@ -166,7 +166,7 @@
                   <a href="{{route('dashboard')}}" class="waves-effect">
                       <i class="fa fa-tachometer" aria-hidden="true"></i>
                       <span style="color: white"> Dashboard</span>
-
+                      
                   </a>
               </li>
         <!--  <li>-->
@@ -206,7 +206,7 @@
                   <a href="{{route('dashboard')}}" class="waves-effect">
                       <i class="fa fa-tachometer" aria-hidden="true"></i>
                       <span style="color: white"> Dashboard</span>
-
+                      
                   </a>
               </li>
       <li>
@@ -216,11 +216,42 @@
         </a>
     </li>
       <li>
-        <a href="{{route('viewagentproperty')}}" class="waves-effect">
-          <i class="fa fa-building" aria-hidden="true"></i>
-            <span> My Properties <span class="badge badge-primary pull-right"></span></span>
+        <a href="{{route('port')}}" class="waves-effect">
+          <i class="fa fa-home" aria-hidden="true"></i>
+            <span> Application Management <span class="badge badge-primary pull-right"></span></span>
         </a>
     </li>
+      <li>
+        <a href="{{route('viewlandloard')}}" class="waves-effect">
+          <i class="fa fa-home" aria-hidden="true"></i>
+            <span> View Landloard <span class="badge badge-primary pull-right"></span></span>
+        </a>
+    </li>
+    {{-- <li>
+      <a href="#" class="waves-effect">
+        <i class="fa fa-users" aria-hidden="true"></i>
+          <span> Lease Management <span class="badge badge-primary pull-right"></span></span>
+      </a>
+  </li>
+  <li>
+    <a href="#" class="waves-effect">
+      <i class="fa fa-building" aria-hidden="true"></i>
+        <span> Tenent Management <span class="badge badge-primary pull-right"></span></span>
+    </a>
+</li> --}}
+<li>
+  <a href="{{route('viewagentproperty')}}" class="waves-effect">
+    <i class="fa fa-home" aria-hidden="true"></i>
+      <span> Properties <span class="badge badge-primary pull-right"></span></span>
+  </a>
+</li>
+<li>
+  <a href="{{url('contact')}}" class="waves-effect">
+    <i class="fa fa-cogs" aria-hidden="true"></i>
+      <span> Service Request <span class="badge badge-primary pull-right"></span></span>
+  </a>
+</li>
+
     <hr style="width: 233px;height: -13px;background: aliceblue;">
      <li>
         <a href="#" class="waves-effect">
@@ -266,7 +297,7 @@ style="color: #83693b; text-align: center;display: none;">For main banner Advert
 <!--  </li>-->
 <!-- <li>-->
 <!--    <a href="" class="waves-effect">-->
-
+     
 <!--        <span>Estate Agent Pakage is Dimond <span class="badge badge-primary pull-right"></span></span>-->
 <!--    </a>-->
 <!--</li>-->
@@ -300,7 +331,7 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
                   <a href="{{route('dashboard')}}" class="waves-effect">
                       <i class="fa fa-tachometer" aria-hidden="true"></i>
                       <span style="color: white"> Dashboard</span>
-
+                      
                   </a>
               </li>
               <li>
@@ -308,7 +339,7 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
                   <i class="fa fa-users" aria-hidden="true"></i>
                     <span>View Estate Agents <span class="badge badge-primary pull-right"></span></span>
                 </a>
-            </li>
+            </li>  
     <hr style="width: 233px;height: -13px;background: aliceblue;">
      <li>
         <a href="#" class="waves-effect">
@@ -324,13 +355,13 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
     </li>
 
        @endif
-
+       
           </ul>
-
+         
       </div>
-
+        
         <div class="clearfix"></div>
-
+        
       </div> <!-- end sidebarinner -->
     </div>
     <!-- Left Sidebar End -->
@@ -348,7 +379,7 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
 
             <ul class="list-inline float-right mb-0">
                 @if (Auth::user()->type=='admin')
-
+                
 
               <li class="list-inline-item dropdown notification-list">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#"
@@ -363,13 +394,13 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
                   <a class="dropdown-item" href="{{route('user.logout')}}"><i
                       class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                 </div>
-
+                
               </li>
-
-
+              
+              
               @elseif (Auth::user()->type=='agent')
               <li class="sellproperty">
-                <span><a href="{{route('addagentproperty')}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp<b>Add Property</b></a></span>
+                <span><a href="{{route('addagentproperty')}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp<b>Add Property</b></a></span> 
                 </li>
 
               <li class="list-inline-item dropdown notification-list">
@@ -385,7 +416,7 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
                   <a class="dropdown-item" href="{{route('user.logout')}}"><i
                       class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                 </div>
-
+                
               </li>
                @elseif (Auth::user()->type=='csrf')
               <!--<li class="sellproperty">-->
@@ -405,11 +436,11 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
                   <a class="dropdown-item" href="{{route('user.logout')}}"><i
                       class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                 </div>
-
+                
               </li>
               @elseif (Auth::user()->type=='seller')
               <li class="sellproperty">
-                <span><a href="{{route('addproperty')}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp<b>Add Property</b></a></span>
+                <span><a href="{{route('addproperty')}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp<b>Add Property</b></a></span> 
                 </li>
 
               <li class="list-inline-item dropdown notification-list">
@@ -425,11 +456,11 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
                   <a class="dropdown-item" href="{{route('user.logout')}}"><i
                       class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                 </div>
-
+                
               </li>
              @endif
             </ul>
-
+            
 
             <ul class="list-inline menu-left mb-0">
               <li class="list-inline-item">
@@ -449,8 +480,8 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
         </div>
         <!-- Top Bar End -->
 
-
-
+      
+       
                         @yield('content')
     <!-- Page content Wrapper -->
 
@@ -462,12 +493,12 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
 
   </div>
   </div>
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
   <script src="{{asset('new/assets/js/jquery.min.js')}}"></script>
   <script src="{{asset('new/assets/js/tether.min.js')}}"></script>
   <script src="{{asset('new/assets/js/popper.min.js')}}"></script>
@@ -506,7 +537,7 @@ style="color: #83693b; text-align: center;display: none;">For upgrade your Packa
   <!-- App js -->
   <script src="{{asset('new/assets/js/app.js')}}"></script>
   <script src="{{asset('new/toastr/toastr.min.js')}}"></script>
-
+  
   <script>
     $("button.infoText").click(function(){
         if($(".sizeText").css("display")=="block"){

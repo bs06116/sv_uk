@@ -59,7 +59,7 @@
                                 <p>
                                     The requirements will be enforced by local authorities who can impose a fine of up to £5,000 where a landlord fails to comply with a remedial notice.
                                 </p>
-                                <p>For more detail information reading the Smoke and <a target="_blank" href="https://www.legislation.gov.uk/uksi/2015/1693/contents/made">Carbon Monoxide Alarm (England) Regulations 2015.</a></p>
+                                <p>For more detail information reading the <a target="_blank" href="https://www.legislation.gov.uk/uksi/2015/1693/contents/made">Smoke and Carbon Monoxide Alarm (England) Regulations 2015.</a></p>
                             </div>
                             <h3><b>Electrical safety</b></h3>
 
@@ -84,8 +84,8 @@
                             <div class="fourth">
                                 <p>
                                     The good tenant always keeps in touch with landlord and report any issues relating to the property and landlord tries to fix it earliest possible to avoid any damages.
-                                    If landlord ignore the core issues which raised by tenant and fails to fix, tenant should keep all communication in recorded. For more detail information visit tenant rights and
-                                    <a target="_blank" href="https://www.gov.uk/government/publications/landlord-and-tenant-rights-and-responsibilities-in-the-private-rented-sector">responsibilities official site.</a>
+                                    If landlord ignore the core issues which raised by tenant and fails to fix, tenant should keep all communication in recorded. For more detail information <a target="_blank" href="https://www.gov.uk/government/publications/landlord-and-tenant-rights-and-responsibilities-in-the-private-rented-sector">visit tenant rights and
+                                    responsibilities official site.</a>
                                          </p>
 
 

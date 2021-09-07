@@ -17,7 +17,7 @@ class Admin
     {
         if ($request->user() && $request->user()->type !='admin')
         {
-            return redirect('/login');
+            return redirect('/control-panel');
         }
         return $next($request);
     }
